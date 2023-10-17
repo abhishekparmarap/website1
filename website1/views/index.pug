@@ -1,0 +1,62 @@
+//- index.pug
+doctype html
+html
+  head
+    title Abhishek Sports Academy
+    style
+      include ../static/style.css
+  body
+    nav.navbar.background
+      ul.nav-list
+        .logo
+          img(src='img/logo.png' alt='logo')
+        li
+          a(href='#home') Home
+        li
+          a(href='#about') About us
+        li
+          a(href='#services') Schemes
+        li
+          a(href='#contact') Contact us
+      .rightNav
+        input#search(type='text' name='search')
+        button.btn.btn-sm Search
+
+    section.background.firstSection
+		  .box-main
+			  .firstHalf
+				  p.text-big The future of education is here
+				  p.text-small
+					  | Lorem ipsum dolor sit amet consectetur adipisicing elit. Atenim vero qui aut quasi ducimus? Nisi, adafh jf akdjkf kdjfa dhdj ldajf d dfjsd hj fksd fjd jd jf jkdf df d wr9e ijdklv f eii.
+				  .buttons
+					  button.btn Subscribe
+					  button.btn Watch Video
+			  .secondHalf
+				  img(src='img/book.jpg' alt='')
+
+    section.section
+		  .paras
+			  p.sectionTag.text-big The end of your search end here
+			  p.sectionSubTag.text-small
+				  | Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed odit cumque officia necessitatibus mollitia distinctio placeat nobis nisi. Alias iusto fugit nemo, accusantium incidunt quae dolorum necessitatibus, officia explicabo omnis unde enim repellendus qui quidem delectus laboriosam velit dolores, quod perspiciatis. Ea alias sapiente provident omnis quisquam eaque deleniti voluptatum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fugiat repellendus, explicabo rem officiis voluptatum quos quia sapiente optio laudantium! Officia recusandae et porro repudiandae id dicta aliquid autem, nemo optio ab neque tempore quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam optio ipsa perspiciatis repellat sapiente minus eligendi eveniet quis similique iure!
+		  .thumbnail
+			  img.imgFluid(src='https://source.unsplash.com/900x900/?book,book' alt='')
+	  section.section.section-left
+		  .paras
+			  p.sectionTag.text-big The end of your search end here
+			  p.sectionSubTag.text-small
+				  | Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed odit cumque officia necessitatibus mollitia distinctio placeat nobis nisi. Alias iusto fugit nemo, accusantium incidunt quae dolorum necessitatibus, officia explicabo omnis unde enim repellendus qui quidem delectus laboriosam velit dolores, quod perspiciatis. Ea alias sapiente provident omnis quisquam eaque deleniti voluptatum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fugiat repellendus, explicabo rem officiis voluptatum quos quia sapiente optio laudantium! Officia recusandae et porro repudiandae id dicta aliquid autem, nemo optio ab neque tempore quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam optio ipsa perspiciatis repellat sapiente minus eligendi eveniet quis similique iure!
+		  .thumbnail
+			  img.imgFluid(src='https://source.unsplash.com/900x900/?book,knowledge' alt='')
+	  section.section
+		  .paras
+			  p.sectionTag.text-big The end of your search end here
+			  p.sectionSubTag.text-small
+				  | Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed odit cumque officia necessitatibus mollitia distinctio placeat nobis nisi. Alias iusto fugit nemo, accusantium incidunt quae dolorum necessitatibus, officia explicabo omnis unde enim repellendus qui quidem delectus laboriosam velit dolores, quod perspiciatis. Ea alias sapiente provident omnis quisquam eaque deleniti voluptatum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fugiat repellendus, explicabo rem officiis voluptatum quos quia sapiente optio laudantium! Officia recusandae et porro repudiandae id dicta aliquid autem, nemo optio ab neque tempore quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam optio ipsa perspiciatis repellat sapiente minus eligendi eveniet quis similique iure!
+		  .thumbnail
+			  img.imgFluid(src='https://source.unsplash.com/900x900/?knowledge,knowledge' alt='')
+
+    footer.footer
+      copyright &copy; 2021 SchemeJankari.online - All right reserved
+    script
+      include ../static/index.js

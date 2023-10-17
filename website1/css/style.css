@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto+Condensed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    border: 3px solid white;
+    width: 30%;
+    border-radius: 40px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+.nav-list{
+    /* background-color: black; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 20px 20px;
+}
+.nav-list li a{
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* font-family: 'PT Sans', sans-serif; */
+     transition: all 0.8s;
+    text-decoration: none;
+    color: white;
+}
+.nav-list li a:hover{
+    color: gray;
+}
+.rightNav{
+    padding: 0 22px;
+    text-align: right;
+    width: 50%;
+    /* background-color: violet; */
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.background{
+    background: rgba(0,0,0,0.7) url('../img/bg.jpeg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstSection{
+    height: 91vh;
+}
+.firstHalf{
+    /* margin: 0px 82px; */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondHalf{
+    width: 30%;
+}
+
+.secondHalf img{
+    width: 70%;
+    border: 3px solid white;
+    border-radius: 90px;
+    display: block;
+    margin: auto;
+}
+.box-main{
+    display: flex;
+    max-width: 50%;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: auto;
+}
+
+.text-big{
+    font-size: 42px;
+}
+.text-small{
+    font-size: 18px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 15px 0px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 19px;
+    overflow: hidden;
+    background: none;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    transition: .2s transform ease-in-out;
+    will-change: transform;
+}
+.btn::after {
+    background-color: white;
+    /* border-radius: 3rem; */
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+  }
+  .btn:hover::after {
+    transform: translate(0, 0);
+  }
+  .btn:hover {
+    border: 2px solid transparent;
+    color: black;
+    /* transform: scale(1.05); */
+    will-change: transform;
+  }
+.btn-sm{
+    font-size: 17px;
+    padding: 4px 10px;
+    /* vertical-align: middle; */
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.section{
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+.section-left{
+    flex-direction: row-reverse;
+}
+
+.paras{
+    padding: 0px 65px;
+}
+
+.sectionTag{
+    padding: 16px 0;
+}
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail img{
+    width: 210px;
+    border: 2px solid black;
+    border-radius: 22px;
+}
+
+.contact{
+    /* background-color: rgb(238, 234, 234); */
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ), url('../img/contact.jpg') no-repeat center center;
+    background-size: cover;
+    /* opacity: 0.9; */
+    /* z-index: -1; */
+    height: 100vh;
+}
+.text-center{
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+}
+.form{
+    max-width: 415px;
+    margin: 10px auto;
+}
+.form-input{
+    font-family: 'PT Sans', sans-serif;
+    margin: 13px 0;
+    width: 100%;
+    padding: 5px 3px;
+    font-size: 18px;
+    border: 2px solid gray;
+    border-radius: 8px;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    /* font-weight: bolder; */
+    padding: 6px;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    font-size: 18px;
+}

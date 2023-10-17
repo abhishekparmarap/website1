@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title SchemeJankari - Information of all schemes
+    block scripts
+    block style 
+  body
+    nav.navbar.background
+      ul.nav-list
+        .logo
+          img(src='../img/logo.png' alt='logo')
+        li
+          a(href='#home') Home
+        li
+          a(href='#about') About us
+        li
+          a(href='#services') Schemes
+        li
+          a(href='#contact') Contact us
+      .rightNav
+        input#search(type='text' name='search')
+        button.btn.btn-sm Search
+    block content
+    footer.footer
+      | Copyright &copy; 2021 SchemeJankari.online - All right reserved
